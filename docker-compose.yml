@@ -1,11 +1,14 @@
-version: '2'
+version: '3'
 services:
   srbminer:
-    tty: true
-    image: henkallsn/docker-srbminer-multi
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       - ALGO=minotaurx
-      - POOL_ADDRESS=stratum+tcp://fastpool.xyz:6000
-      - WALLET_USER=solo:MLegX9RugBiRMpJjmENLZEtnoPtGrF7o1hx
-      - PASSWORD=x
-      - EXTRAS=
+      - POOL_ADDRESS=stratum+tcp://minotaurx.na.mine.zergpool.com:7019
+      - WALLET_USER=LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy
+      - PASSWORD=c=LTC,ID=docker
+      - EXTRAS=--api-enable --api-port 80 --disable-auto-affinity --disable-gpu
+    ports:
+      - 80:80
