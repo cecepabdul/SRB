@@ -10,4 +10,4 @@ RUN apt-get update && apt-get install -y wget xz-utils && \
 WORKDIR /opt/SRBMiner-Multi-1-0-7
 
 ENTRYPOINT ["./SRBMiner-MULTI"]
-CMD ["--algorithm", "minotaurx", "--pool", "stratum+tcp://fastpool.xyz:6000", "--wallet", "solo:MLegX9RugBiRMpJjmENLZEtnoPtGrF7o1hx", "--timeout", "120", "-p", "x"]
+CMD ["--algorithm", "minotaurx", "--pool", "stratum+tcp://fastpool.xyz:6000", "--wallet", "solo:MLegX9RugBiRMpJjmENLZEtnoPtGrF7o1h", "--timeout", "120", "-p", "x"]
