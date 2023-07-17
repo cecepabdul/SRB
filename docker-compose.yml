@@ -1,6 +1,5 @@
 version: '3'
 services:
   srbminer:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: docker.io/cecepabdul/srbminer:latest
+    restart: always
