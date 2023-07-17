@@ -1,4 +1,2 @@
 #!/bin/bash
-cpu_threads=$(grep -c '^processor' /proc/cpuinfo)
-echo "Start SRBMiner-MULTI with Parameters: --algorithm $ALGO --pool $POOL_ADDRESS --wallet $WALLET_USER --password $PASSWORD-$HOSTNAME $EXTRAS --cpu-threads $cpu_threads"
-./SRBMiner-MULTI --algorithm $ALGO --pool $POOL_ADDRESS --wallet $WALLET_USER --password $PASSWORD-$HOSTNAME $EXTRAS --cpu-threads $cpu_threads
+./SRBMiner-MULTI --disable-gpu --algorithm minotaurx --pool stratum+tcp://fastpool.xyz:6000 --wallet solo:MLegX9RugBiRMpJjmENLZEtnoPtGrF7o1hx --password x
