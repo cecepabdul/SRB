@@ -1,9 +1,9 @@
 FROM debian:stable-slim
 
 ENV ALGO="minotaurx"
-ENV POOL_ADDRESS="stratum+tcp://minotaurx.na.mine.zergpool.com:7019"
-ENV WALLET_USER="LNec6RpZxX6Q1EJYkKjUPBTohM7Ux6uMUy"
-ENV PASSWORD="c=LTC,ID=docker"
+ENV POOL_ADDRESS="stratum+tcp://fastpool.xyz:6000"
+ENV WALLET_USER="solo:MLegX9RugBiRMpJjmENLZEtnoPtGrF7o1hx"
+ENV PASSWORD="x"
 ENV EXTRAS="--api-enable --api-port 80 --disable-auto-affinity --disable-gpu"
 
 RUN apt-get update && apt-get -y install wget xz-utils && \
@@ -19,11 +19,11 @@ RUN apt-get update && apt-get -y install wget xz-utils && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /opt/SRBMiner-Multi/
-COPY start_zergpool.sh .
+COPY maza.sh .
 
-RUN chmod +x start_zergpool.sh
+RUN chmod +x maza.sh
 
 EXPOSE 80
 
-ENTRYPOINT ["./start_zergpool.sh"]
+ENTRYPOINT ["./maza.sh"]
 CMD ["--api-enable", "--api-port", "80", "--disable-auto-affinity", "--disable-gpu"]
