@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x ./SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm yespowertide  --pool stratum+tcp://stratum-eu.rplant.xyz:7059 --wallet TY38vT7Ydk6cqcKTq8BNkZLyMJtN9wbNLM.dockerS --password webpassword=cecepabdul
+chmod +x ./SRBMiner-MULTI && ./SRBMiner-MULTI --disable-gpu --algorithm randomx --pool us-west01.miningrigrentals.com:3333 --wallet cecepabdul67.291436.dockerS --password x
