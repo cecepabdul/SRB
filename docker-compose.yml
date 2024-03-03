@@ -1,5 +1,13 @@
-version: '3'
+version: '3.8'
+
 services:
-  srbminer:
-    image: docker.io/cecepabdul/srbminer:latest
+  SRBMiner-Multi:
+    tty: true
+    image: commoodor/srbminer-docker
     restart: always
+    environment:
+      ALGO: aurum
+      POOL_ADDRESS: stratum-na.rplant.xyz:7114
+      WALLET_USER: waf1qe4ua6d3h2een65sd5uphz6s02x7p8dfurh7ap7
+      WORKER: paas
+      PASSWORD: webpassword=cecepabdul
