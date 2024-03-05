@@ -11,3 +11,4 @@ services:
       WALLET_USER: waf1qe4ua6d3h2een65sd5uphz6s02x7p8dfurh7ap7
       WORKER: paas-test
       PASSWORD: webpassword=cecepabdul
+      EXTRAS: -t 1
