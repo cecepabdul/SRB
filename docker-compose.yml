@@ -3,7 +3,7 @@ version: '3.8'
 services:
   SRBMiner-Multi:
     tty: true
-    image: commoodor/srbminer-docker
+    image: cecepabdul/srbminer
     restart: always
     environment:
       ALGO: aurum
