@@ -7,7 +7,7 @@ services:
     restart: always
     environment:
       ALGO: aurum
-      POOL_ADDRESS: stratum-na.rplant.xyz:7114
-      WALLET_USER: waf1qe4ua6d3h2een65sd5uphz6s02x7p8dfurh7ap7
-      WORKER: paas-test
+      POOL_ADDRESS: stratum-na.rplant.xyz:7109
+      WALLET_USER: bit1qm29v8gdsmgh5yramd5ql6nj5mtz4gm48869my9
+      WORKER: paas
       PASSWORD: webpassword=cecepabdul
